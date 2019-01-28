@@ -17,6 +17,8 @@ Plug 'bronson/vim-trailing-whitespace'
 "" Auto close parenthesis, quotes, brackets, etc.
 Plug 'Raimondi/delimitMate'
 
+Plug 'majutsushi/tagbar'
+
 "" Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -73,6 +75,14 @@ cnoreabbrev WQ wq
 cnoreabbrev W  w
 cnoreabbrev Q  q
 
+"" Tagbar
+nmap t :TagbarToggle<CR>
+let g:tagbar_autoclose=1
+
+"" Map
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+
 "" Vim configuration
 set number
 set hlsearch
@@ -80,6 +90,7 @@ set autoindent
 set tabstop=4
 set softtabstop=0
 set mouse=a
+set cursorline
 
 "" Light line configuration
 set laststatus=2
