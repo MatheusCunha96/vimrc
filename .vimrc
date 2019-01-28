@@ -80,8 +80,8 @@ nmap t :TagbarToggle<CR>
 let g:tagbar_autoclose=1
 
 "" Map
-nnoremap <C-h> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
+nnoremap <S-Tab> gT
+nnoremap <Tab> gt
 
 "" Vim configuration
 set number
