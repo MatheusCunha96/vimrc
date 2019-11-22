@@ -56,6 +56,12 @@ Plug 'ecomba/vim-ruby-refactoring'
 "" Light line
 Plug 'itchyny/lightline.vim'
 
+"" Latex
+Plug 'vim-latex/vim-latex'
+
+""Ctrlp
+Plug 'ctrlpvim/ctrlp.vim'
+
 call plug#end()
 
 "" Theme
@@ -87,10 +93,17 @@ nnoremap <Tab> gt
 set number
 set hlsearch
 set autoindent
-set tabstop=4
+set tabstop=2 shiftwidth=2 expandtab
 set softtabstop=0
-set mouse=a
 set cursorline
+
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
 
 "" Light line configuration
 set laststatus=2
