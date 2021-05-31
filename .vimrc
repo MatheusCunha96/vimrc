@@ -4,6 +4,15 @@
 
 call plug#begin()
 
+"" ale linters
+Plug 'dense-analysis/ale'
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'ruby': ['rubocop'],
+\}
+let g:ale_ruby_rubocop_executable = 'bundle'
+
 "" NERDTree
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -47,6 +56,7 @@ Plug 'xolox/vim-misc'
 Plug 'xolox/vim-lua-ftplugin'
 
 "" Ruby Bundle
+Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-projectionist'
