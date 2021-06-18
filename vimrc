@@ -63,6 +63,9 @@ Plug 'tpope/vim-projectionist'
 Plug 'thoughtbot/vim-rspec'
 Plug 'ecomba/vim-ruby-refactoring'
 
+"" JSX
+Plug 'maxmellon/vim-jsx-pretty'
+
 "" Light line
 Plug 'itchyny/lightline.vim'
 
