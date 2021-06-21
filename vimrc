@@ -93,6 +93,7 @@ cnoreabbrev wQ wq
 cnoreabbrev WQ wq
 cnoreabbrev W  w
 cnoreabbrev Q  q
+cnoreabbrev Tabe  tabe
 
 "" Tagbar
 nmap t :TagbarToggle<CR>
